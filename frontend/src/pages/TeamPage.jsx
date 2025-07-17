@@ -7,9 +7,11 @@ import {
     StarsCanvas,
   
   } from "../components";
+import Navbar from '../components/Team/Navbar';
 
 
 function TeamPage() {
+  const navigationItems = ['Home', 'Projects', 'Events', 'Team', 'Contact'];
     return (
 
 
@@ -25,6 +27,7 @@ function TeamPage() {
 <div>
 
         <NavBar2 />
+        {/* <Navbar navItems={navigationItems}/> */}
         <div className="relative z-0 bg-primary">
             <Card2 />
             <Card />

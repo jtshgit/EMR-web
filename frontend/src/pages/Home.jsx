@@ -11,13 +11,14 @@ import {
 import Contact from "../components/ContactUs/Contact";
 import Footer from "../components/Footer/FooterComp";
 import UpcomingWorkshops from "../components/UpcomingWorkshops/UpcomingWorkshops";
+const navigationItems = ['Home', 'Projects', 'Events', 'Team', 'Contact'];
 
 export default function Home() {
   return (
         <div className=" bg-cover bg-no-repeat bg-center">
     <div className="h-screen">
       <div className="relative z-0 bg-primary">
-          <Navbar />
+          <Navbar navItems={navigationItems}/>
           <div className="relative  z-0">
             <div  className="relative  bg-hero-pattern bg-cover bg-no-repeat bg-center z-0">
               <Hero />
