@@ -30,6 +30,7 @@ import AdminRoute from "./components/AdminRoute";
 import TeamDashboard from "./pages/TeamDashboard";
 import UserDashboard from "./pages/userDashboard";
 import SynapseEventPage from "./pages/SynapseEventPage";
+import AdminDashBoard from "./admin/AdminDashBoard";
 
 const App = () => {
   return (
@@ -53,7 +54,7 @@ const App = () => {
               <Route path="/register" element={<SynapseRegister />} />
               <Route path="/login" element={<Login />} />
               <Route path="/forgot-password" element={<ForgotPassword />} />
-
+              <Route path="/admin" element={<AdminDashBoard />} />
               <Route
                 path="/dashboard"
                 element={
